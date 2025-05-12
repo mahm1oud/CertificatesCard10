@@ -1,0 +1,68 @@
+
+⚠️ DATABASE_URL غير محدد. استخدام وضع المخزن المؤقت في الذاكرة.
+🔄 تهيئة وضع الذاكرة لقاعدة البيانات...
+✅ تم تهيئة وضع الذاكرة لقاعدة البيانات بنجاح
+Found fonts directory at: C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\fonts
+Using fonts from directory: C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\fonts
+Cairo font path: C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\fonts\Cairo-Regular.ttf, exists: true
+✅ تم تسجيل 6 خطوط عربية بنجاح من المجلد C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\fonts
+Could not register custom fonts, using system fonts instead
+⚠️ معلومات اتصال قاعدة البيانات غير محددة. محاولة استخدام معلومات اتصال بديلة.
+✅ تم العثور على ملف إعدادات هوستنجر، جاري تحميله...
+⚠️ معلومات اتصال قاعدة البيانات غير متوفرة. استخدام وضع الذاكرة المؤقتة.
+❌ بيانات الاتصال بقاعدة البيانات غير كاملة: { host: 'localhost', database: undefined }
+❌ فشل في إنشاء اتصال قاعدة البيانات MySQL: Error: بيانات الاتصال بقاعدة البيانات غير كاملة
+    at createDatabaseConnection (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\db.mysql.ts:130:13)
+    at <anonymous> (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\db.mysql.ts:303:1)
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+[2025-05-06T02:28:51.434Z] ERROR: فشل في إنشاء اتصال قاعدة البيانات MySQL { error: 'Error: بيانات الاتصال بقاعدة البيانات غير كاملة' }
+
+==== معلومات قاعدة البيانات ====
+🌐 البيئة: تطوير
+🔄 نوع قاعدة البيانات المطلوب: mysql
+🔄 نوع قاعدة البيانات المستخدم بالفعل: mysql
+🔄 جاري تهيئة قاعدة بيانات MySQL...
+❌ فشل في تهيئة اتصال قاعدة البيانات: Error: فشل في إنشاء اتصال قاعدة البيانات: بيانات الاتصال بقاعدة البيانات غير كاملة
+    at createDatabaseConnection (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\db.mysql.ts:200:11)
+    at <anonymous> (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\db.mysql.ts:303:1)
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+Initializing database with sample data...
+✅ تم إنشاء اتصال قاعدة البيانات MySQL بنجاح
+✅ تم إنشاء اتصال قاعدة البيانات بنجاح
+🔄 التحقق من وجود مستخدم admin افتراضي...
+✅ اتصال قاعدة البيانات يعمل بشكل صحيح
+❌ محاولة 1/3 فشلت: TypeError: Cannot read properties of undefined (reading 'select')
+    at ensureDefaultAdminExists (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\init-db.ts:42:34)
+    at async <anonymous> (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\index.ts:107:7)
+⏳ الانتظار 2 ثوانٍ قبل المحاولة التالية...
+❌ محاولة 2/3 فشلت: TypeError: Cannot read properties of undefined (reading 'select')
+    at ensureDefaultAdminExists (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\init-db.ts:42:34)
+    at async <anonymous> (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\index.ts:107:7)
+⏳ الانتظار 2 ثوانٍ قبل المحاولة التالية...
+❌ محاولة 3/3 فشلت: TypeError: Cannot read properties of undefined (reading 'select')
+    at ensureDefaultAdminExists (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\init-db.ts:42:34)
+    at async <anonymous> (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\index.ts:107:7)
+✅ تم التحقق من وجود مستخدم admin
+Serving static files from: C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\client\static
+Google authentication is disabled or missing configuration
+Facebook authentication is disabled or missing configuration
+Twitter authentication is disabled or missing configuration
+LinkedIn authentication is disabled or missing configuration
+5:28:55 AM [express] serving on port 5000
+5:28:55 AM [express] 🔄 التحقق من وجود مستخدم admin افتراضي...
+🔄 التحقق من وجود مستخدم admin افتراضي...
+✅ اتصال قاعدة البيانات يعمل بشكل صحيح
+❌ محاولة 1/3 فشلت: TypeError: Cannot read properties of undefined (reading 'select')
+    at ensureDefaultAdminExists (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\init-db.ts:42:34)
+⏳ الانتظار 2 ثوانٍ قبل المحاولة التالية...
+❌ محاولة 2/3 فشلت: TypeError: Cannot read properties of undefined (reading 'select')
+    at ensureDefaultAdminExists (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\init-db.ts:42:34)
+⏳ الانتظار 2 ثوانٍ قبل المحاولة التالية...
+❌ محاولة 3/3 فشلت: TypeError: Cannot read properties of undefined (reading 'select')
+    at ensureDefaultAdminExists (C:\Users\hp\Downloads\CertificatesCard8\CertificatesCard\server\init-db.ts:42:34)
+✅ تم التحقق من وجود مستخدم admin
+5:29:00 AM [express] ✅ تم التحقق من وجود مستخدم admin

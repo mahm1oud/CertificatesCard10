@@ -1,0 +1,187 @@
+
+⚠️ DATABASE_URL غير محدد. استخدام وضع المخزن المؤقت بدلاً من ذلك.
+✅ تم إنشاء اتصال قاعدة البيانات بنجاح
+Found fonts directory at: C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\fonts
+Using fonts from directory: C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\fonts
+Cairo font path: C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\fonts\Cairo-Regular.ttf, exists: true
+✅ تم تسجيل 6 خطوط عربية بنجاح من المجلد C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\fonts
+Could not register custom fonts, using system fonts instead
+❌ Database connection failed: AggregateError [ECONNREFUSED]: 
+    at C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async checkDatabaseConnection (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:617:20)
+    at async file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:8614:33 {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5432
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5432
+    }
+  ]
+}
+❌ فشل الاتصال بقاعدة البيانات
+Serving static files from: C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\client\static
+Error initializing data: AggregateError [ECONNREFUSED]: 
+    at C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/node_modules/drizzle-orm/node-postgres/session.js:83:22
+    at async DatabaseStorage.initializeData (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:743:38) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5432
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5432
+    }
+  ]
+}
+Error fetching auth settings: AggregateError [ECONNREFUSED]: 
+    at C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DatabaseStorage.getAuthSettings (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:1132:26)
+    at async setupGoogleStrategy (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:3107:30) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5432
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5432
+    }
+  ]
+}
+Google authentication is disabled or missing configuration
+Error fetching auth settings: AggregateError [ECONNREFUSED]:
+    at C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DatabaseStorage.getAuthSettings (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:1132:26)
+    at async setupFacebookStrategy (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:3169:32) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5432
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5432
+    }
+  ]
+}
+Facebook authentication is disabled or missing configuration
+Error fetching auth settings: AggregateError [ECONNREFUSED]:
+    at C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DatabaseStorage.getAuthSettings (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:1132:26)
+    at async setupTwitterStrategy (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:3325:31) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5432
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5432
+    }
+  ]
+}
+Twitter authentication is disabled or missing configuration
+Error fetching auth settings: AggregateError [ECONNREFUSED]:
+    at C:\Users\hp\Downloads\CertificatesCard (3)\CertificatesCard\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DatabaseStorage.getAuthSettings (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:1132:26)
+    at async setupLinkedInStrategy (file:///C:/Users/hp/Downloads/CertificatesCard%20(3)/CertificatesCard/dist/index.js:3386:32) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5432
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5432
+        at createConnectionError (node:net:1677:14)
+        at afterConnectMultiple (node:net:1707:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5432
+    }
+  ]
+}
+LinkedIn authentication is disabled or missing configuration
+خطأ غير معالج: Error: listen ENOTSUP: operation not supported on socket 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1917:21)
+    at listenInCluster (node:net:1996:12)
+    at node:net:2205:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'ENOTSUP',
+  errno: -4049,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 5000
+}

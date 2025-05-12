@@ -1,0 +1,30 @@
+Serving static files from: C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\client\static
+وعد مرفوض غير معالج: TypeError: Missing parameter name at 12: https://git.new/pathToRegexpError
+    at name (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:153:13)
+    at lexer (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:171:21)
+    at lexer.next (<anonymous>)
+    at Iter.peek (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:188:32)
+    at Iter.tryConsume (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:195:24)
+    at Iter.text (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:213:26)
+    at consume (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:285:23)
+    at parse (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:320:18)
+    at <anonymous> (C:\Users\hp\Downloads\CertificatesCard9\CertificatesCard\node_modules\path-to-regexp\src\index.ts:503:40)
+    at Array.map (<anonymous>)
+[2025-05-06T23:59:54.819Z] CRITICAL: Missing parameter name at 12: https://git.new/pathToRegexpError {
+  name: 'TypeError',
+  message: 'Missing parameter name at 12: https://git.new/pathToRegexpError',
+  timestamp: '2025-05-06T23:59:54.819Z',
+  stack: 'TypeError: Missing parameter name at 12: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:153:13)\n' +
+    '    at lexer (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:171:21)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:188:32)\n' +
+    '    at Iter.tryConsume (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:195:24)\n' +
+    '    at Iter.text (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:213:26)\n' +
+    '    at consume (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:285:23)\n' +
+    '    at parse (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:320:18)\n' +
+    '    at <anonymous> (C:\\Users\\hp\\Downloads\\CertificatesCard9\\CertificatesCard\\node_modules\\path-to-regexp\\src\\index.ts:503:40)\n' +
+    '    at Array.map (<anonymous>)',
+  type: 'unhandledRejection',
+  promise: '[object Promise]'
+}

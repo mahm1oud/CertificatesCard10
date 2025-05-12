@@ -1,0 +1,128 @@
+شكرًا لمشاركة تفاصيل الخطأ، وسأقوم بتوضيح وتوجيهك لحل المشاكل الظاهرة في مشروعك واحدًا تلو الآخر:
+
+✅ أولاً: أخطاء الاستيراد في React
+الخطأ:
+javascript
+نسخ
+تحرير
+[plugin:runtime-error-plugin] The requested module '/src/components/template-editor/AdvancedTemplateEditor.tsx' does not provide an export named 'AdvancedTemplateEditor'
+السبب:
+تحاول استيراد AdvancedTemplateEditor بشكل مسمى (named export) من ملف لا يصدّر هذا الاسم.
+
+الحل:
+تحقق من الملف: AdvancedTemplateEditor.tsx
+
+تأكد أن بداخله يوجد تصدير مشابه لـ:
+
+tsx
+نسخ
+تحرير
+export const AdvancedTemplateEditor = () => { ... }
+أو:
+
+tsx
+نسخ
+تحرير
+export default AdvancedTemplateEditor;
+إذا كان التصدير default فقط، فيجب الاستيراد كالتالي:
+
+tsx
+نسخ
+تحرير
+import AdvancedTemplateEditor from '@/components/template-editor/AdvancedTemplateEditor';
+✅ ثانيًا: خطأ Konva:
+الرسالة:
+pgsql
+نسخ
+تحرير
+Konva error: You may only add groups and shapes to a layer.
+السبب:
+أنت تضيف مكونًا إلى Layer لا يُعتبر عنصرًا صالحًا من نوع Shape أو Group.
+
+الحل:
+تأكد أن كل ما يوضع داخل <Layer> هو من أنواع:
+
+<Rect />
+
+<Text />
+
+<Circle />
+
+<Group />
+وهكذا، وليس عناصر React عادية أو div.
+
+مثال خاطئ:
+
+tsx
+نسخ
+تحرير
+<Layer>
+  <div>غير مسموح</div>
+</Layer>
+مثال صحيح:
+
+tsx
+نسخ
+تحرير
+<Layer>
+  <Text text="شهادة" />
+</Layer>
+✅ ثالثًا: فشل الاتصال بقاعدة البيانات PostgreSQL
+الخطأ الرئيسي:
+nginx
+نسخ
+تحرير
+ECONNREFUSED ::1:5432
+السبب:
+قاعدة البيانات غير مفعّلة.
+
+أو غير مثبتة.
+
+أو لم تضبط .env بشكل صحيح.
+
+الحلول:
+تأكد أن PostgreSQL يعمل:
+
+افتح PgAdmin أو خدمة PostgreSQL وتأكد أنها تعمل.
+
+أو شغّلها يدويًا (على ويندوز):
+
+sql
+نسخ
+تحرير
+services.msc → PostgreSQL → Start
+ضبط المتغير DATABASE_URL في ملف .env:
+مثال:
+
+env
+نسخ
+تحرير
+DATABASE_URL=postgres://username:password@localhost:5432/databasename
+إذا لم تنشئ قاعدة بيانات بعد:
+
+استخدم psql أو PgAdmin لإنشاء قاعدة.
+
+تأكد أن 5432 هو المنفذ الصحيح (قد يختلف حسب التثبيت).
+
+✅ رابعًا: الخطأ الأخير عند تشغيل السيرفر:
+perl
+نسخ
+تحرير
+Error: listen ENOTSUP: operation not supported on socket 0.0.0.0:5000
+السبب:
+في بعض أنظمة ويندوز أو خلف الجدران النارية (Firewall)، العنوان 0.0.0.0 قد لا يكون مسموحًا.
+
+الحل:
+في كود السيرفر (غالبًا index.ts أو server.ts):
+ابحث عن السطر:
+
+ts
+نسخ
+تحرير
+app.listen(5000, '0.0.0.0', ...)
+واستبدله بـ:
+
+ts
+نسخ
+تحرير
+app.listen(5000, '127.0.0.1', ...)
